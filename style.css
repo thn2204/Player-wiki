@@ -1,0 +1,144 @@
+:root {
+    --overview-height: 30px;
+    --blue-color: #b6cfe5;
+    --label-color: #000000;
+    --text-color: #707070;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d5e0ea;
+}
+
+
+/* css */
+/* rubik,helvetica,arial,sans-serif */
+
+.player {
+    width: 340px;
+    min-height: 600px;
+    border: 1px solid #AAAAAA;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #707070;
+}
+
+.name-player {
+    background-color: var(--blue-color);
+    height: 34px;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-img {
+    height: 220px;
+    width: 220px;
+    display: flex;
+    margin: auto;
+}
+
+.overview {
+    background-color: var(--blue-color);
+    height: 32px;
+    line-height: 1px;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr {
+    /* border-collapse: collapse; */
+    width: 100%;
+}
+
+.region-icon {
+    font-family: helvetica,arial,sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 10px;
+    text-align: center;
+    user-select: none;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    width: 12px;
+    margin: 0px;
+    vertical-align: middle;
+    height: 23.5px;
+}
+
+tr.player-info {
+    height: 25px;
+    width: 20px;
+}
+
+.player-info__label {
+    font-weight: bold;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+.player-info__edit {
+    font-size: 14px;
+    font-family: helvetica,arial,sans-serif;
+    height: 25px;
+    padding-left: 12px;
+}
+
+.player-info__edit {
+    display: flex;
+    align-items: center;
+}
+
+.player-info__edit-country-img {
+    width: 18px;
+    user-select: none;
+}
+
+.player-info__edit-team {
+    text-decoration: none;
+    color: #0645ad;
+}
+
+.player-info__edit-team-img {
+    width: 50px;
+}
+
+.player-info__edit-role-img {
+    width: 13px;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+}
+
+.social-link-img {
+    outline: none;
+    border: none;
+}
+
+.ingame {
+    padding-left: 6px;
+}
+
+.player-info__edit.player-info__label {
+    padding-left: 0;
+}
